@@ -1,17 +1,14 @@
-uuid: c190527c-5648-4fcc-8675-83b3136287b4
+uuid: 04a435a8-ed64-43c8-8d46-71c735f3f44d
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.basic_html
-    - rest.resource.user_logout_rest_resource
-    - rest.resource.user_logout_rest_resource_new
   module:
     - comment
     - contact
     - file
     - filter
-    - rest
     - search
     - shortcut
     - system
@@ -28,8 +25,6 @@ permissions:
   - 'access site-wide contact form'
   - 'delete own files'
   - 'post comments'
-  - 'restful get user_logout_rest_resource'
-  - 'restful get user_logout_rest_resource_new'
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
