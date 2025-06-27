@@ -22,3 +22,5 @@ ddev start -y
 
 # further automated install / setup steps, e.g.
 ddev composer install
+
+ddev drush cim -y
