@@ -1,15 +1,15 @@
-myservices.example:
-  path: '/myservices/example'
-  defaults:
-    _title: 'Example'
-    _controller: '\Drupal\myservices\Controller\MyservicesController'
-  requirements:
-    _permission: 'access content'
-
 myservices.my:
   path: '/myservices/my'
   defaults:
     _title: 'Example Controller'
     _controller: '\Drupal\myservices\Controller\MyController'
+  requirements:
+    _permission: 'access content'
+
+myservices.example:
+  path: '/myservices/example'
+  defaults:
+    _title: 'example'
+    _controller: '\Drupal\myservices\Controller\MyservicesController::userInfo'
   requirements:
     _permission: 'access content'
