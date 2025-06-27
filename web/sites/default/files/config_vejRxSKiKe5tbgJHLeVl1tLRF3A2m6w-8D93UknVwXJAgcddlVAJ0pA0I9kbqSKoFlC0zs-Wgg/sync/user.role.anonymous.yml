@@ -1,0 +1,29 @@
+uuid: acea2024-496a-484d-9bb0-9b609f2a0d2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+    - rest.resource.user_logout_rest_resource
+    - rest.resource.user_logout_rest_resource_new
+  module:
+    - comment
+    - contact
+    - filter
+    - rest
+    - search
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'restful get user_logout_rest_resource'
+  - 'restful get user_logout_rest_resource_new'
+  - 'search content'
+  - 'use text format restricted_html'

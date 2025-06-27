@@ -1,0 +1,18 @@
+uuid: 631eb3c4-e564-461b-bd5b-3d66ea6d733a
+langcode: en
+status: true
+dependencies:
+  module:
+    - restui
+    - serialization
+    - user
+id: user_logout_rest_resource_new
+plugin_id: user_logout_rest_resource_new
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie
