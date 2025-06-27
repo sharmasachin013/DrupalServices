@@ -1,0 +1,5 @@
+name: 'custom_user_rest'
+type: module
+description: 'Custom Rest user Logout'
+package: Custom
+core_version_requirement: ^10 || ^11

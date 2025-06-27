@@ -55,7 +55,7 @@ parameters:
     # domain name. Set the name_suffix to a short random string to ensure this
     # session cookie name is unique on different installations on the same
     # domain and path (for example, when migrating from Drupal 7).
-    name_suffix: ''
+    name_suffix: ""
   twig.config:
     # Twig debugging:
     #
@@ -118,7 +118,8 @@ parameters:
     # render array, hence varying every render array by these cache contexts.
     #
     # @default ['languages:language_interface', 'theme', 'user.permissions']
-    required_cache_contexts: ['languages:language_interface', 'theme', 'user.permissions']
+    required_cache_contexts:
+      ["languages:language_interface", "theme", "user.permissions"]
     # Renderer automatic placeholdering conditions:
     #
     # Drupal allows portions of the page to be automatically deferred when
@@ -143,7 +144,7 @@ parameters:
       # Disable by setting to [].
       #
       # @default ['session', 'user']
-      contexts: ['session', 'user']
+      contexts: ["session", "user"]
       # Tags with a high invalidation frequency.
       #
       # Disable by setting to [].
@@ -202,23 +203,23 @@ parameters:
   # for more information about the topic in general.
   # Note: By default the configuration is disabled.
   cors.config:
-    enabled: false
+    enabled: true
     # Specifies allowed headers and sets the Access-Control-Allow-Headers
     # header. For example, ['X-Custom-Header']. See
     # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Headers
-    allowedHeaders: []
+    allowedHeaders: ["*"]
     # Specifies allowed request methods and sets the
     # Access-Control-Allow-Methods header. For example, ['POST', 'GET',
     # 'OPTIONS'] or ['*'] to allow all. Note the wildcard is not yet implemented
     # in all browsers. See
     # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Methods
-    allowedMethods: []
+    allowedMethods: ["*"]
     # Configure requests allowed from specific origins and sets the
     # Access-Control-Allow-Origin header. For example,
     # ['https://www.drupal.org'] or ['*'] to allow any origin to access your
     # resource. See
     # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin
-    allowedOrigins: ['*']
+    allowedOrigins: ["*"]
     # Configure requests allowed from origins, matching against regex patterns.
     allowedOriginsPatterns: []
     # Sets the Access-Control-Expose-Headers header. The default is false which
@@ -233,7 +234,7 @@ parameters:
     # caching. For example, setting the value to 600 will cache results of a
     # preflight request for 10 minutes. See
     # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Max-Age
-    maxAge: false
+    maxAge: 1000
     # Sets the Access-Control-Allow-Credentials header if set to true. See
     # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials
     supportsCredentials: false
