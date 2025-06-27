@@ -17,5 +17,5 @@
             "label": "web https"
         }
     },
-    "postCreateCommand": "bash .devcontainer/setup_project.sh"
+    "postCreateCommand": "chmod +x .devcontainer/setup.sh && .devcontainer/setup.sh"
 }
