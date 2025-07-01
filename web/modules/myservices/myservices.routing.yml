@@ -13,3 +13,12 @@ myservices.example:
     _controller: '\Drupal\myservices\Controller\MyservicesController::userInfo'
   requirements:
     _permission: 'access content'
+myservices.alias_to_path:
+  path: '/path-from-alias/{alias}'
+  defaults:
+    _controller: '\Drupal\myservices\Controller\AliasController::getPathFromAlias'
+    _title: 'Path from Alias'
+  requirements:
+    _permission: 'access content'
+    alias: '.+'
+
