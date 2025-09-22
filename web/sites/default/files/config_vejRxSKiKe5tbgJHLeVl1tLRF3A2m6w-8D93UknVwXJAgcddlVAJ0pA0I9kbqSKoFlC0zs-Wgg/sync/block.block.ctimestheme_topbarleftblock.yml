@@ -1,0 +1,25 @@
+uuid: b4831324-79c7-4d2f-bbff-0f460e3949a9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5368af88-8ccc-4101-b542-493f14e0d184'
+  module:
+    - block_content
+  theme:
+    - ctimestheme
+id: ctimestheme_topbarleftblock
+theme: ctimestheme
+region: topbarleft
+weight: 0
+provider: null
+plugin: 'block_content:5368af88-8ccc-4101-b542-493f14e0d184'
+settings:
+  id: 'block_content:5368af88-8ccc-4101-b542-493f14e0d184'
+  label: 'Topbar Left Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

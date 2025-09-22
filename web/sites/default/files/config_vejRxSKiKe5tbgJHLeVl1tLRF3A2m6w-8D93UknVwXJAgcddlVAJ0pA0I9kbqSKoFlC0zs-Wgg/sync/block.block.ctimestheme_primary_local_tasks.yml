@@ -1,0 +1,22 @@
+uuid: f02e7e86-c200-437f-ac1a-e561cbe2d21f
+langcode: en
+status: false
+dependencies:
+  theme:
+    - ctimestheme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: ctimestheme_primary_local_tasks
+theme: ctimestheme
+region: topbar
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

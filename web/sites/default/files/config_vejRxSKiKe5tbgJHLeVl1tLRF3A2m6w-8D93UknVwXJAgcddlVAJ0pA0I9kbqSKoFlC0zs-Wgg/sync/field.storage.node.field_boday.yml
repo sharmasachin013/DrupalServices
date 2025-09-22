@@ -1,0 +1,19 @@
+uuid: fb6e7eac-9462-4b91-b561-e27a7e227586
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_boday
+field_name: field_boday
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

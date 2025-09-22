@@ -1,0 +1,23 @@
+uuid: 84a59e4c-a182-4943-9083-546c4c112061
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - ctimestheme
+_core:
+  default_config_hash: pbbed0hdqGDF-_QWVVTWRAwgDIotFuAvWH5mWUZu0fA
+id: ctimestheme_search_form_wide
+theme: ctimestheme
+region: topbar
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

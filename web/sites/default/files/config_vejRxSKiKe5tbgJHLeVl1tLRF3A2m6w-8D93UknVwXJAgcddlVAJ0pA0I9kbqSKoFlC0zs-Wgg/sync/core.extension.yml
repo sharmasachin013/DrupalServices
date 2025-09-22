@@ -14,6 +14,7 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -26,7 +27,6 @@ module:
   link: 0
   menu_link_content: 0
   menu_ui: 0
-  myservices: 0
   mysql: 0
   node: 0
   options: 0
@@ -47,4 +47,6 @@ module:
 theme:
   olivero: 0
   claro: 0
+  stark: 0
+  ctimestheme: 0
 profile: standard

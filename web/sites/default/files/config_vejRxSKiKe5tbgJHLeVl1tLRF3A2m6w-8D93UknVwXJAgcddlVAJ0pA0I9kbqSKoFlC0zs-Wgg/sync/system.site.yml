@@ -1,14 +1,14 @@
 _core:
   default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
 langcode: en
-uuid: 1520543e-201e-4bc5-a967-21bcef25b0c1
-name: 'Drush Site-Install new'
-mail: admin@example.com
+uuid: d1a23ebf-12c9-4857-a092-2fd9f5865596
+name: OnlineChitwan
+mail: amt.com.np@gmail.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

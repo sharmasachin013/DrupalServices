@@ -1,0 +1,15 @@
+# Main theme library.
+global:
+  js:
+    js/ctimestheme.js: {}
+    js/jquery-3.4.1.min.js: {}
+    js/bootstrap.bundle.min.js: {}
+    js/easing.min.js: {}
+    js/owl.carousel.min.js: {}
+    js/main.js: {}
+  css:
+    base:
+      css/owl.carousel.min.css: {}
+      css/style.css: {}
+    theme:
+      css/theme/print.css: { media: print }

@@ -1,0 +1,57 @@
+{# templates/menu--main.html.twig #}
+{#
+  Renders a div-based Bootstrap navbar (anchors directly inside .navbar-nav)
+  - Safe: uses create_attribute() fallbacks
+  - Handles items with no URL (renders <a href="#"> or <span>)
+  - Adds 'show' to dropdown wrapper and menu when in active trail
+#}
+
+<div{{ attributes.addClass('navbar-nav', 'mr-auto', 'py-0') }}>
+  {% for item in items %}
+    {# Prepare wrapper attributes (used for dropdown parent) #}
+    {% set wrapper = item.attributes|default(create_attribute()) %}
+    {% do wrapper.addClass('nav-item') %}
+    {% if item.is_expanded %}{% do wrapper.addClass('dropdown') %}{% endif %}
+    {% if item.in_active_trail %}{% do wrapper.addClass('show') %}{% endif %}
+
+    {% if item.is_expanded %}
+      <div{{ wrapper }}>
+        {# Link attributes for the parent toggle #}
+        {% set link_attributes = item.link_attributes|default(create_attribute()) %}
+        {% do link_attributes.addClass('nav-item', 'nav-link', 'dropdown-toggle') %}
+        {% do link_attributes.setAttribute('data-toggle', 'dropdown') %}
+        {% set expanded = item.in_active_trail ? 'true' : 'false' %}
+        {% do link_attributes.setAttribute('aria-expanded', expanded) %}
+
+        {% if item.url %}
+          {{ link(item.title, item.url, link_attributes) }}
+        {% else %}
+          <a href="#"{{ link_attributes }}>{{ item.title }}</a>
+        {% endif %}
+
+        <div class="dropdown-menu rounded-0 m-0{% if item.in_active_trail %} show{% endif %}">
+          {% for sub in item.below %}
+            {% set sub_attr = sub.attributes|default(create_attribute()) %}
+            {% do sub_attr.addClass('dropdown-item') %}
+            {% if sub.url %}
+              {{ link(sub.title, sub.url, sub_attr) }}
+            {% else %}
+              <a href="#"{{ sub_attr }}>{{ sub.title }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% else %}
+      {# Simple (non-dropdown) link as in your original HTML #}
+      {% set link_attributes = item.link_attributes|default(create_attribute()) %}
+      {% do link_attributes.addClass('nav-item', 'nav-link') %}
+      {% if item.in_active_trail %}{% do link_attributes.addClass('active') %}{% endif %}
+
+      {% if item.url %}
+        {{ link(item.title, item.url, link_attributes) }}
+      {% else %}
+        <a href="#"{{ link_attributes }}>{{ item.title }}</a>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>

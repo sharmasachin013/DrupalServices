@@ -1,0 +1,8 @@
+uuid: bb4152a8-745f-4b4a-a754-234ef6455c63
+langcode: en
+status: true
+dependencies: {  }
+id: socialicon
+label: SocialIcon
+description: ''
+locked: false

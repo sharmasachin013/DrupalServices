@@ -1,0 +1,22 @@
+uuid: 20f82479-5121-4cb9-938f-30a7e385c9e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ctimestheme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: ctimestheme_content
+theme: ctimestheme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

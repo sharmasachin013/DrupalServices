@@ -1,0 +1,25 @@
+uuid: 6d2b7102-3453-4986-9a65-e23499046506
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.socialicon
+  module:
+    - system
+  theme:
+    - ctimestheme
+id: ctimestheme_socialicon
+theme: ctimestheme
+region: socilaicon
+weight: 0
+provider: null
+plugin: 'system_menu_block:socialicon'
+settings:
+  id: 'system_menu_block:socialicon'
+  label: SocialIcon
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: bbaeb020-50a8-4108-8d83-025a451c7a1a
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - ctimestheme
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: ctimestheme_help
+theme: ctimestheme
+region: topbar
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

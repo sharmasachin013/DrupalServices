@@ -1,0 +1,23 @@
+name: ctimestheme
+type: theme
+base theme: stark
+description: A flexible theme with a responsive, mobile-first layout.
+package: Custom
+core_version_requirement: ^10 || ^11
+libraries:
+  - ctimestheme/global
+  - ctimestheme/fontawesome
+regions:
+  topbar: "Topbar"
+  topbarleft: "Topbar Left"
+  socilaicon: "Social Icon"
+  navbar: "Navbar"
+  newsslider: "Main News slider"
+  bnews: "Breaking News"
+  featurednews: "Featured News Slider"
+  newswithsidebar: "News with Sider bar"
+  content: "Content"
+  footer1: "Footer 1"
+  footer2: "Footer 2"
+  footer3: "Footer 3"
+  foooter4: "Footer 4"

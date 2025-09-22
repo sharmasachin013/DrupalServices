@@ -1,0 +1,22 @@
+uuid: dcf50719-06d4-4fd4-85cc-11d4ad2150c0
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - ctimestheme
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: ctimestheme_powered
+theme: ctimestheme
+region: topbar
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: b28a5c99-bce3-4fdd-9d29-9f7e41c70822
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - ctimestheme
+id: ctimestheme_mainnavigation
+theme: ctimestheme
+region: navbar
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: true
+visibility: {  }

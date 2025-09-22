@@ -1,0 +1,82 @@
+{#
+/**
+ * @file
+ * Olivero's theme implementation to display a single page.
+ *
+ * The doctype, html, head and body tags are not in this template. Instead they
+ * can be found in the html.html.twig template normally located in the
+ * core/modules/system directory.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - base_path: The base URL path of the Drupal installation. Will usually be
+ *   "/" unless you have installed Drupal in a sub-directory.
+ * - is_front: A flag indicating if the current page is the front page.
+ * - logged_in: A flag indicating if the user is registered and signed in.
+ * - is_admin: A flag indicating if the user has permission to access
+ *   administration pages.
+ *
+ * Site identity:
+ * - front_page: The URL of the front page. Use this instead of base_path when
+ *   linking to the front page. This includes the language domain or prefix.
+ *
+ * Page content (in order of occurrence in the default page.html.twig):
+ * - node: Fully loaded node, if there is an automatically-loaded node
+ *   associated with the page and the node ID is the second argument in the
+ *   page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ * Regions:
+ * - page.header: Items for the header region.
+ * - page.highlighted: Items for the highlighted region.
+ * - page.primary_menu: Items for the primary menu region.
+ * - page.secondary_menu: Items for the secondary menu region.
+ * - page.content: The main content of the current page.
+ * - page.sidebar: Items for the first sidebar.
+ * - page.featured_bottom_first: Items for the first featured bottom region.
+ * - page.featured_bottom_second: Items for the second featured bottom region.
+ * - page.footer_first: Items for the first footer column.
+ * - page.footer_second: Items for the second footer column.
+ * - page.breadcrumb: Items for the breadcrumb region.
+ * - page.social: Items for the social region.
+ *
+ * @see \Drupal\Core\Theme\ThemePreprocess::preprocessPage()
+ * @see html.html.twig
+ */
+#}
+
+<div id="page-wrapper" class="page-wrapper">
+	<div
+		id="page">
+		{# top bar start #}
+
+
+		<div class="row align-items-center bg-dark px-lg-5">
+			<div class="col-lg-9">
+				{{page.topbarleft}}
+			</div>
+			<div class="col-lg-3 text-right d-none d-md-block">
+				{{page.socilaicon}}
+			</div>
+		</div>
+		<div class="row align-items-center bg-white py-3 px-lg-5">
+			<div class="col-lg-4">
+				<a href="index.html" class="navbar-brand p-0 d-none d-lg-block">
+					<h1 class="m-0 display-4 text-uppercase text-primary">Biz<span class="text-secondary font-weight-normal">News</span>
+					</h1>
+				</a>
+			</div>
+			<div class="col-lg-8 text-center text-lg-right">
+				<a href="https://htmlcodex.com"><img class="img-fluid" src="img/ads-728x90.png" alt=""></a>
+			</div>
+		</div>
+
+
+	</div>
+	<!-- Navbar Start-->
+	<div class="container-fluid p-0">
+	  {{ page.navbar }}
+	</div>
+	<!-- Navbar End-->
+</div>
